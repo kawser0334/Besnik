@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+/* colors */
+
+:root{
+    --primary:#45B3F2;
+    --secondary:#222223;
+    --h_text:#404041;
+    --pure:#fefefe;
+    --light:#5F5F64;
+    --heaven:#ffffff;
+}
+
+/* utility class  */
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.items-center{
+    align-items: center;
+}
+
+/* header section start */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header header{
+    padding: 40px 0;
+}
+.menu{
+    
+    margin-right: -40px;
+}
+
+.menu ul li a{
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 40px;
+    color: var(--h_text);
+}
+
+.header-icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #DFDFDF ;
+    border-radius: 50%;
+} 
+/* header section end */
+
+/* Banking section start  */
+.banking{
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.bank-con h1{
+    font-family: "bai jamjuree";
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: -0.01em;
+    width: 440px;
+    margin-bottom: 20px;
+}
+.bank-con{
+    position: relative;
+}
+.bank-con .circle{
+    border: 3px solid #ff8a1f;
+    border-radius: 50%;
+    height: 68px;
+    width: 208px;
+    position: absolute;
+    top: 103px;
+    left: -7px;
+    z-index: -1;
+}
+.bank-con p{
+    font-family: "roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--light);
+    width: 280px;
+    margin: 30px 0;
+}
+.icon-get{
+    width:40px ;
+    height:40px ;
+    background: var(--secondary);
+    margin-right: 20px;
+}
+.payment{
+    width: 675px;
+    height: 327px;
+    background: linear-gradient(106.01deg, #80D1FF 0%, #44B2F1 69.58%);
+    border-radius: 4px;
+    position: relative;
+}
+.payment .visa-card{
+    position: absolute;
+    top: -131px;
+    left: -57px;
+}
+.payment .wrap-text{
+    position: absolute;
+    top: 207px;
+    left: 324px;
+    
+}
+.payment .pay-icon{
+    width: 228px;
+    height: 327px;
+    background: linear-gradient(201.5deg, #FFD968 4.52%, #FAC422 102.63%);
+    padding: 60px 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.pay-icon ul{
+    flex-wrap: wrap;
+    gap: 20px 25px;
+}
+.pay-icon ul li{
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 20px;
+    background-color:#F9FDFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon-black{
+    background-color:#222223 !important;
+}
+/* Banking section end */
+
+/* Hot deal section start */
+.deals{
+    margin: 80px 0;
+}
+
+.pr{
+    padding-right: 101px;
+}
+.deal-con h1{
+    font-family: "bai jamjuree";
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    color: var(--secondary);
+    margin-bottom: 10px;
+    width: 233px;
+}
+.deal-con h3{
+    font-family: "inter";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--secondary);
+    margin: 12px 0 ;
+}
+.deal-con p{
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--light);
+}
+/* Hot deal section end */
+
+/* social section start */
+.social{
+    gap: 350px;
+    background-color:#cfedFF;
+    padding: 130px 300px;
+    margin:100px 0 80px 0;
+    position: relative;
+}
+.social .ellips{
+    position: absolute;
+    left: 48%;
+    top: -35px;
+}
+.social div{
+    width: 264px;
+}
+.social h2{
+    font-family: 'Bai Jamjuree';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    color: #202020;
+    margin-bottom:16px ;
+}
+.social p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--light);
+}
+
+/* social section end */
+
+/* customer section start */
+.customer{
+    margin: 80px 0;
+}
+.about-c h1{
+    font-family: 'Bai Jamjuree';
+    font-weight: 700;
+    font-size: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+.about-c p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 28px;
+    color: var(--light);
+    margin-bottom: 80px;
+    padding: 0 280px;
+}
+.cus-table{
+    display: grid;
+    grid-template-columns: 250px 380px 250px 300px;
+}
+.cus-table div{
+    padding: 50px 40px;
+    border: 1.4px solid #A9B3AB;
+    border-left: none !important;
+}
+.cus-table .last-border{
+    border-right: none !important ;
+    /* border:1.4px solid linear-gradient(201.5deg, #A9B3AB, #a9b3ab37); */
+
+}
+.cus-table h3{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.4em;
+}
+.cus-table h2{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;  
+}
+/* customer section end */
+/* work part start  */
+.work-main{
+    margin-top: 120px;
+}
+.work-main .img{
+    margin-left: -110px;
+}
+.work-con h1{
+    font-family: 'Bai Jamjuree';
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 62px;
+    color: #192430;
+    margin-bottom: 20px;
+}
+.work-con p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #727272;
+    width: 440px;
+}
+.work-con > div{
+    margin-left: -230px;
+}
+.work-con > div div{
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+.work-con div h3{
+    font-family: 'Bai Jamjuree';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: -24px;
+}
+.work-con div p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    width: 280px;
+}
+/* work part end */
+/* subscribe section start */
+.subscribe{
+    background: #41B3F4;
+    padding: 150px 0;
+    margin: 60px 0;
+    position: relative;
+}
+.subs-con{
+    gap:60px;
+    display: grid;
+    grid-template-columns: 130px 50px 500px 200px;
+}
+
+.sub-vl {
+    border-right: 6px solid #718176;
+    height: 140px;
+  
+}
+.subs-con div p{
+    font-family: "roboto";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--light);
+    padding: 20px 0;
+}
+.subs-con div h1{
+    font-family: 'Bai Jamjuree';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 50px;
+}
+.sub-text{
+    margin-left: 60px;
+}
+.subs-con div button{
+    border: none;
+}
+.subs-con div button a{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: #E15C19;
+    padding: 20px 40px;
+    color: #FFFFFF;
+    border: none;
+}
+.subs-con .visa-card-buttom img{
+    transform: rotate(-63.5deg);
+    position: absolute;
+    top: -65px;
+    right: -180px;
+}
+.subs-con .bg-brush{
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+/* subscribe section end */
+
+/* footer section satrt */
+footer{
+    padding: 40px 0;
+    margin-top: 20px ;
+}
+.footer{
+    margin-bottom: 40px;
+}
+.copy-right p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px; 
+    color: #7B827D;
+}
+.copy-right .hr{
+    width: 660px;
+    border: 1px solid #565B58;
+}
+/* footer section end */
